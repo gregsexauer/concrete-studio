@@ -10,7 +10,7 @@ title: Visual
       <div class="post-date">{{ post.date | date_to_string }}</div>
       <div class="post-author">{{ post.author }}</div>
       {{ post.excerpt }}
-      <a href="{{ {{ site.base_path}}/post.url }}">Read more</a>
+      <a href="{{ site.base_path }}{{ post.url }}">Read more</a>
     </div>
   </div>
 {% endfor %}
