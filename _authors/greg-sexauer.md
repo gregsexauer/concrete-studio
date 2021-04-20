@@ -6,4 +6,6 @@ email: gregsexauer@gmail.com
 image: "assets/images/Untitled.jpg"
 resume: "assets/files/resume-gregsexauer.pdf"
 ---
-Greg is currently a student at the University of Pittsburgh studying Digital Narratives & Interactive Design and Politics & Philosophy. 
+Greg is currently a student at the University of Pittsburgh studying Digital Narratives & Interactive Design and Politics & Philosophy.
+
+Greg designed and developed this website as a project for Composing Digital Media in the Spring of 2021.
