@@ -8,7 +8,7 @@ title: Team
     <div class="team-member">
       <figure>
         <img src="{{ author.image }}" alt="Image of {{ author.name }}">
-        <figcaption><a href="{{ author.url }}">{{ author.name }}</a>
+        <figcaption><a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
           {{ author.position }}
           <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
           <a href="{{ author.resume }}" download>Resume</a>
