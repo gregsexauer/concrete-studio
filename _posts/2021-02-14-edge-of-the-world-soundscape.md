@@ -4,5 +4,5 @@ author: Greg Sexauer
 tag: audio
 ---
 <audio controls>
-  <source src="{{ base_path }}/assets/audio/edge_of_the_world_soundscape.mp3" type="audio/mpeg">
+  <source src="{{ site.base_path }}/assets/audio/edge_of_the_world_soundscape.mp3" type="audio/mpeg">
 </audio>
