@@ -7,11 +7,11 @@ title: Team
   <div class="post-container">
     <div class="team-member">
       <figure>
-        <img src="{{ author.image }}" alt="Image of {{ author.name }}">
+        <img src="{{ {{ site.base_path}}/author.image }}" alt="Image of {{ {{ site.base_path}}/author.name }}">
         <figcaption><a href="{{ author.url }}">{{ author.name }}</a>
           {{ author.position }}
-          <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
-          <a href="{{ author.resume }}" download>Resume</a>
+          <a href= "mailto: {{ {{ site.base_path}}/author.email }}">{{ author.email }}</a>
+          <a href="{{ {{ site.base_path}}/author.resume }}" download>Resume</a>
         </figcaption>
       </figure>
       <p>{{ author.content | markdownify }}</p>
