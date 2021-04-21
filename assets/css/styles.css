@@ -39,6 +39,15 @@ a:hover {
   background: #b5b5b5;
 }
 
+.logo > a {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo > a > img {
+  height: 1.5em;
+}
+
 .menu {
   margin-top: 15px;
 }
