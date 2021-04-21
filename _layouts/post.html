@@ -4,7 +4,7 @@ layout: default
 
 <div class="post-container">
   <article class="post">
-    <div class="post-title">{{ page.title }}</div>
+    <h2 class="post-title">{{ page.title }}</h2>
     <div class="post-date">{{ page.date | date_to_string }}</div>
     {% assign author = site.authors | where: "name", page.author | first %}
     {% if author %}

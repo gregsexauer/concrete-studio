@@ -6,7 +6,7 @@ title: Visual
 {% for post in site.tags.visual %}
   <div class="post-container">
     <div class="post">
-      <div class="post-title">{{ post.title }}</div>
+      <h2 class="post-title">{{ post.title }}</h2>
       <div class="post-date">{{ post.date | date_to_string }}</div>
       <div class="post-author">{{ post.author }}</div>
       {{ post.excerpt }}
