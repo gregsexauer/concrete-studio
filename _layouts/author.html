@@ -5,9 +5,9 @@ layout: default
 <!--- TODO this might look good as a sidebar, fill out more info --->
 <div class="post-container">
   <div class="post">
-    <h1>{{ page.name }}</h1>
-    <h2>{{ page.position }}</h2>
-    {{ content }}
+    <h2>{{ page.name }}</h2>
+    <h3>{{ page.position }}</h3>
+    <p>{{ content }}</p>
   </div>
 </div>
 
@@ -15,7 +15,7 @@ layout: default
 {% for post in filtered_posts %}
   <div class="post-container">
     <div class="post">
-      <div class="post-title">{{ post.title }}</div>
+      <h2 class="post-title">{{ post.title }}</h2>
       <div class="post-date">{{ post.date | date_to_string }}</div>
       <div class="post-author">{{ post.author }}</div>
       {{ post.excerpt }}
