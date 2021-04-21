@@ -6,6 +6,7 @@ title: Team
 {% for author in site.authors %}
   <div class="post-container">
     <div class="team-member">
+
       <figure>
         <img src="{{ author.image }}" alt="Image of {{ author.name }}">
         <figcaption><a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
@@ -14,7 +15,11 @@ title: Team
           <a href="{{ author.resume }}" download>Resume</a>
         </figcaption>
       </figure>
-      <p>{{ author.content | markdownify }}</p>
+
+      <div class="team-member-description">
+        <p>{{ author.content | markdownify }}</p>
+      </div>
+
     </div>
   </div>
 {% endfor %}
