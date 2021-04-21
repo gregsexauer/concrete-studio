@@ -37,6 +37,8 @@ a:hover {
   width: 100%;
   padding: 50px;
   background: #b5b5b5;
+
+  z-index: 1;
 }
 
 .logo > a {
@@ -135,6 +137,10 @@ a:hover {
 
 .post > p {
   white-space: pre-line;
+}
+
+.post > audio {
+  z-index: 0;
 }
 
 .read-more {
