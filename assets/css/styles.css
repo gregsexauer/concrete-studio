@@ -172,6 +172,10 @@ a:hover {
   white-space: pre-line;
 }
 
-.team-member-description > p {
+.team-member-description {
   margin-left: 1.5em;
+}
+
+.team-member-description > p {
+  margin-bottom: 1em;
 }
