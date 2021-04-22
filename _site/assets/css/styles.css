@@ -34,7 +34,7 @@ a:hover {
   justify-content: space-between;
 
   width: 100%;
-  padding: 50px;
+  padding: 2.75em;
   background: #b5b5b5;
 
   z-index: 1;
@@ -50,12 +50,12 @@ a:hover {
 }
 
 .menu {
-  margin-top: 15px;
+  margin-top: .8em;
 }
 
 .menu > li {
   display: inline;
-  margin-right: 50px;
+  margin-right: 2.75em;
 }
 
 .menu > li:last-of-type {
@@ -66,11 +66,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   background: #adadad;
-  padding-top: 60px;
+  padding-top: 3.33em;
 
   position: absolute;
-  top: -25px;
-  left: -30px;
+  top: -1.33em;
+  left: -1.66em;
   z-index: 1;
 }
 
@@ -82,8 +82,8 @@ a:hover {
   list-style: none;
   border-bottom: 1px solid #FFF;
 
-  padding: 0 40px 10px 20px;
-  margin: 10px;
+  padding: 0 2.2em .5em 1em;
+  margin: .5em;
 }
 
 .posts-menu li:last-of-type {
@@ -101,7 +101,7 @@ a:hover {
 }
 
 .header-break {
-  height: 200px;
+  height: 9.5em;
 }
 
 /****** Posts Styling ******/
