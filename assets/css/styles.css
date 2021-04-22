@@ -177,3 +177,15 @@ a:hover {
 .sidebar-container {
   float: left;
 }
+
+.team-member > figure > figcaption > p {
+  margin-top: .5em;
+}
+
+.team-member > figure > figcaption > p:first-of-type {
+  margin-top: 0em;
+}
+
+.team-member > figure > figcaption > p:last-of-type {
+  margin-top: 0em;
+}

@@ -7,7 +7,7 @@ layout: default
   <div class="team-member">
     <figure>
       {% if site.environment == "production" %}
-        <img src="{{ base_path }}/{{ page.image }}" alt="Image of {{ page.name }}">
+        <img src="{{ site.base_path }}/{{ page.image }}" alt="Image of {{ page.name }}">
       {% else %}
         <img src="/{{ page.image }}" alt="Image of {{ page.name }}">
       {% endif %}
@@ -24,7 +24,7 @@ layout: default
           <a href="/{{ page.resume }}" download>Resume</a>
         {% endif %}
 
-        <p>{{ content }}</p>
+        <p>{{ content | markdownify }}</p>
       </figcaption>
     </figure>
 
