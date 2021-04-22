@@ -156,7 +156,7 @@ a:hover {
   display: flex;
   width: 19em;
   background-color: #cccccc;
-  margin: 1em;
+  margin: 0em 1em 1em 1em;
   padding: 1em;
 }
 
