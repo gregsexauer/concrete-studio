@@ -1,23 +1,54 @@
 <nav>
-  <div class="header">
-    <div class="logo">
-      <a href="{{ site.base_path }}/index.html">
-        <img src="{{ site.base_path }}/assets/images/house-silhouette.png" alt="Home Button">
-        <h1>Concrete Studio</h1>
-      </a>
+  {% if site.environment == "production "%}
+    <div class="header">
+      <div class="logo">
+        <a href="{{ site.base_path }}/index.html">
+          <img src="{{ site.base_path }}/assets/images/house-silhouette.png" alt="Home Button">
+          <h1>Concrete Studio</h1>
+        </a>
+      </div>
+
+      <ul class="menu">
+
+        <li class="dropdown"><span>Posts ▾</span>
+          <ul class="posts-menu">
+            <li><a href="{{ site.base_path }}/blog.html">Blog</a></li>
+            <li><a href="{{ site.base_path }}/visual.html">Visual</a></li>
+            <li><a href="{{ site.base_path }}/audio.html">Audio</a></li>
+          </ul>
+        </li>
+
+        <li><a href="{{ site.base_path }}/downloads.html">Downloads</a></li>
+        <li><a href="{{ site.base_path }}/team.html">Team</a></li>
+        <li><a href="{{ site.base_path }}/about.html">About</a></li>
+      </ul>
     </div>
-    <ul class="menu">
-      <li class="dropdown"><span>Posts ▾</span>
-        <ul class="posts-menu">
-          <li><a href="{{ site.base_path }}/blog.html">Blog</a></li>
-          <li><a href="{{ site.base_path }}/visual.html">Visual</a></li>
-          <li><a href="{{ site.base_path }}/audio.html">Audio</a></li>
-        </ul>
-      </li>
-      <li><a href="{{ site.base_path }}/downloads.html">Downloads</a></li>
-      <li><a href="{{ site.base_path }}/team.html">Team</a></li>
-      <li><a href="{{ site.base_path }}/about.html">About</a></li>
-    </ul>
-  </div>
+
+  {% else %}
+    <div class="header">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/assets/images/house-silhouette.png" alt="Home Button">
+          <h1>Concrete Studio</h1>
+        </a>
+      </div>
+
+      <ul class="menu">
+
+        <li class="dropdown"><span>Posts ▾</span>
+          <ul class="posts-menu">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/visual.html">Visual</a></li>
+            <li><a href="/audio.html">Audio</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/downloads.html">Downloads</a></li>
+        <li><a href="/team.html">Team</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+
+  {% endif %}
   <div class="header-break"></div>
 </nav>

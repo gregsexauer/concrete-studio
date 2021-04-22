@@ -8,7 +8,13 @@ layout: default
     <div class="post-date">{{ page.date | date_to_string }}</div>
     {% assign author = site.authors | where: "name", page.author | first %}
     {% if author %}
-      <div class="post-author"><a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a></div>
+        <div class="post-author">
+          {% if site.environment == "production" %}
+            <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
+          {% else %}
+            <a href="{{ author.url }}">{{ author.name }}</a>
+          {% endif %}
+        </div>
     {% endif %}
     <p>{{ content }}</p>
   </article>

@@ -19,3 +19,5 @@ defaults:
       layout: "default"
 
 base_path: /concrete-studio
+
+environment: production
