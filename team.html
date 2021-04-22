@@ -12,13 +12,15 @@ title: Team
           <img src="{{ author.image }}" alt="Image of {{ author.name }}">
           <figcaption>
 
-            {% if site.environment == "production" %}
-              <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
-            {% else %}
-              <a href="{{ author.url }}">{{ author.name }}</a>
-            {% endif %}
+            <h2>
+              {% if site.environment == "production" %}
+                <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
+              {% else %}
+                <a href="{{ author.url }}">{{ author.name }}</a>
+              {% endif %}
+            </h2>
 
-            {{ author.position }}
+            <h3>{{ author.position }}</h3>
 
             {% if author.email %}
               <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
@@ -34,5 +36,3 @@ title: Team
     </div>
   {% endfor %}
 </div>
-
-<!--- TODO make this less linear --->

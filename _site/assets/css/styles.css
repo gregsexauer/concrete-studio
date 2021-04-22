@@ -21,7 +21,6 @@ body {
 a:link,
 a:visited {
   color: #2e2e2e;
-/*  text-decoration: none; */
 }
 
 a:hover {
@@ -175,10 +174,6 @@ a:hover {
   flex-direction: column;
 }
 
-.team-member-sidebar-container {
-
-}
-
-.team-member-sidebar {
-
+.sidebar-container {
+  float: left;
 }

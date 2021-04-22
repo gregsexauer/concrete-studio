@@ -3,11 +3,27 @@ layout: default
 ---
 
 <!--- TODO this might look good as a sidebar, fill out more info --->
-<div class="post-container">
-  <div class="post">
-    <h2>{{ page.name }}</h2>
-    <h3>{{ page.position }}</h3>
-    <p>{{ content }}</p>
+<div class="post-container sidebar-container">
+  <div class="team-member">
+    <figure>
+      <img src="/{{ page.image }}" alt="Image of {{ page.name }}">
+      <figcaption>
+
+        <h2>{{ page.name }}</h2>
+        <h3>{{ page.position }}</h3>
+
+        {% if page.email %}
+          <a href= "mailto: {{ page.email }}">{{ page.email }}</a>
+        {% endif %}
+
+        {% if page.resume %}
+          <a href="/{{ page.resume }}" download>Resume</a>
+        {% endif %}
+
+        <p>{{ content }}</p>
+      </figcaption>
+    </figure>
+
   </div>
 </div>
 
