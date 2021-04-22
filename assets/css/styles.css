@@ -158,9 +158,9 @@ a:hover {
 }
 
 .team-member > figure {
-  flex: auto;
   background-color: #b5b5b5;
   padding: .5em;
+  margin-bottom: auto;
 }
 
 .team-member > img {
@@ -179,6 +179,10 @@ a:hover {
 
 .team-member-description > p {
   margin-bottom: 1em;
+}
+
+.team-member-description > p:first-of-type {
+  margin-bottom: 0em;
 }
 
 .team-member-sidebar-container {
