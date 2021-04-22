@@ -148,12 +148,15 @@ a:hover {
 }
 
 /****** Team Styling ******/
+.team-member-container {
+  display: flex;
+}
 
 .team-member {
   display: flex;
-  width: 40em;
+  width: 19em;
   background-color: #cccccc;
-  margin-bottom: 1em;
+  margin: 1em;
   padding: 1em;
 }
 
@@ -163,26 +166,13 @@ a:hover {
   margin-bottom: auto;
 }
 
-.team-member > img {
-  height: 256px;
-  width: 256px;
+.team-member > figure > img {
+  height: 16em;
 }
 
 .team-member > figure > figcaption {
   display: flex;
   flex-direction: column;
-}
-
-.team-member-description {
-  margin-left: 1em;
-}
-
-.team-member-description > p {
-  margin-bottom: 1em;
-}
-
-.team-member-description > p:first-of-type {
-  margin-bottom: 0em;
 }
 
 .team-member-sidebar-container {

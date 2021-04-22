@@ -3,38 +3,36 @@ layout: default
 title: Team
 ---
 
-{% for author in site.authors %}
-  <div class="post-container">
-    <div class="team-member">
+<div class="team-member-container">
+  {% for author in site.authors %}
+    <div class="post-container">
+      <div class="team-member">
 
-      <figure>
-        <img src="{{ author.image }}" alt="Image of {{ author.name }}">
-        <figcaption>
+        <figure>
+          <img src="{{ author.image }}" alt="Image of {{ author.name }}">
+          <figcaption>
 
-          {% if site.environment == "production" %}
-            <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
-          {% else %}
-            <a href="{{ author.url }}">{{ author.name }}</a>
-          {% endif %}
+            {% if site.environment == "production" %}
+              <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
+            {% else %}
+              <a href="{{ author.url }}">{{ author.name }}</a>
+            {% endif %}
 
-          {{ author.position }}
+            {{ author.position }}
 
-          {% if author.email %}
-            <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
-          {% endif %}
+            {% if author.email %}
+              <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
+            {% endif %}
 
-          {% if author.resume %}
-            <a href="{{ author.resume }}" download>Resume</a>
-          {% endif %}
-        </figcaption>
-      </figure>
+            {% if author.resume %}
+              <a href="{{ author.resume }}" download>Resume</a>
+            {% endif %}
+          </figcaption>
+        </figure>
 
-      <div class="team-member-description">
-        <p>{{ author.content | markdownify }}</p>
       </div>
-
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>
 
 <!--- TODO make this less linear --->
