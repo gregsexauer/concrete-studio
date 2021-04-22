@@ -10,14 +10,22 @@ title: Team
       <figure>
         <img src="{{ author.image }}" alt="Image of {{ author.name }}">
         <figcaption>
+
           {% if site.environment == "production" %}
             <a href="{{ site.base_path }}{{ author.url }}">{{ author.name }}</a>
           {% else %}
             <a href="{{ author.url }}">{{ author.name }}</a>
           {% endif %}
+
           {{ author.position }}
-          <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
-          <a href="{{ author.resume }}" download>Resume</a>
+
+          {% if author.email %}
+            <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
+          {% endif %}
+
+          {% if author.resume %}
+            <a href="{{ author.resume }}" download>Resume</a>
+          {% endif %}
         </figcaption>
       </figure>
 
