@@ -30,6 +30,7 @@ layout: default
   </div>
 </div>
 
+<div class="author-posts">
 {% assign filtered_posts = site.posts | where: "author", page.name %}
 {% for post in filtered_posts %}
   <div class="post-container">
@@ -46,3 +47,4 @@ layout: default
     </div>
   </div>
 {% endfor %}
+</div>
