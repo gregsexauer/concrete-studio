@@ -106,7 +106,8 @@ a:focus {
   justify-content: center;
 }
 
-.post {
+.post,
+.about-post {
   display: flex;
   width: 40em;
   background-color: #cccccc;
@@ -129,7 +130,8 @@ a:focus {
   margin-bottom: 1em;
 }
 
-.post > p {
+.post > p,
+.about-post > p {
   margin-top: .5em
 }
 
